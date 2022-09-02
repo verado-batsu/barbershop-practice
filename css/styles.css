@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap');
 @import url(./nullstyle.css);
 
 :root {
@@ -12,7 +12,23 @@ body {
 
 
 /* .................................HEADER................................ */
+.header {}
 
+.header-nav {}
+
+.header-logo {}
+
+.logo-img {}
+
+.nav-list {}
+
+.nav-item {}
+
+.nav-link {}
+
+.header-tel {}
+
+.btn {}
 /* .................................END HEADER................................ */
 
 
