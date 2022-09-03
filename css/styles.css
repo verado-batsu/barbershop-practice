@@ -5,15 +5,16 @@ font-family: 'Raleway', sans-serif; */
 @import url(./nullstyle.css);
 
 :root {
-	--light-theme-text-color: #FFFFFF;
 	--primary-text-color: #555555;
 	--secondary-text-color: #9DA4BD;
 	--tertiary-text-color: #303030;
 	--accent-color: #FF6C00;
+	--light-theme-text-color: #FFFFFF;
 	--dark-reference-text-color: rgba(157, 164, 189, 0.6);
 	
-
-	--barbers-footer-bg-color: #F7F7F7;
+	--primary-bg-color: #FFFFFF;
+	--secondary-bg-color: #F7F7F7;
+	--tertiary-bg-color: #191C26;
 
 
 	--btn-dark-theme-color: #303030;
@@ -105,7 +106,7 @@ body {
 
 /* ...................................FOOTER.................................. */
 .footer {
-	background-color: var(--barbers-footer-bg-color);
+	background-color: var(--secondary-bg-color);
 }
 
 .footer-copy {
