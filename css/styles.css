@@ -1,18 +1,67 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
 @import url(./nullstyle.css);
 
 :root {
-	
+	--header-text-color: #FFFFFF;
+	--primary-text-color: #555555;
+	--accent-color: #FF6C00;
+	--btn-dark-text-color: #303030;
+	--btn-light-text-color: #FFFFFF;
+
+	--btn-dark-bg-color: #303030;
+	--btn-light-bg-color: #FFFFFF;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 body {
-	
+	font-family: 'Open Sans', sans-serif;
+	color: var(--primary-text-color);
 }
 
+.link:hover,
+.link:focus {
+	color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: var(--accent-color);
+	color: var(--btn-light-text-color);
+}
+
+.dark-bg {
+	background-color: var(--btn-dark-bg-color);
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+	color: var(--btn-light-text-color);
+}
+.light-bg {
+	background-color: var(--btn-light-bg-color);
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+	color: var(--btn-dark-text-color);
+}
 
 /* .................................HEADER................................ */
-.header {}
+.header {
+	background-color: #969292;
+}
 
 .header-nav {}
 
@@ -24,11 +73,28 @@ body {
 
 .nav-item {}
 
-.nav-link {}
+.nav-link {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	color: var(--header-text-color);
+}
 
-.header-tel {}
+.header-tel {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	color: var(--header-text-color);
+}
 
-.btn {}
+.btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+}
 /* .................................END HEADER................................ */
 
 
