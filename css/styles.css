@@ -5,11 +5,12 @@ font-family: 'Raleway', sans-serif; */
 @import url(./nullstyle.css);
 
 :root {
-	--header-text-color: #FFFFFF;
+	--light-theme-text-color: #FFFFFF;
 	--primary-text-color: #555555;
 	--secondary-text-color: #9DA4BD;
 	--tertiary-text-color: #303030;
 	--accent-color: #FF6C00;
+	--dark-reference-text-color: rgba(157, 164, 189, 0.6);
 	
 
 	--barbers-footer-bg-color: #F7F7F7;
@@ -82,7 +83,7 @@ body {
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.1em;
-	color: var(--header-text-color);
+	color: var(--light-theme-text-color);
 }
 
 .header-tel {
@@ -90,7 +91,7 @@ body {
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.1em;
-	color: var(--header-text-color);
+	color: var(--light-theme-text-color);
 }
 
 .btn {
@@ -133,7 +134,7 @@ body {
 .main-content {}
 
 .content-hero {
-	background-color: #969292;
+	background-color: #5c5a5a;
 }
 
 .hero-list {}
@@ -148,9 +149,28 @@ body {
 	color: var(--tertiary-text-color);
 }
 
-.hero-reference {}
+.hero-reference {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
+	color: var(--dark-reference-text-color);
+}
 
-.hero-title {}
+.hero-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 1.18;
+	letter-spacing: 0.05em;
+	color: var(--light-theme-text-color);
+}
 
-.hero-descrpt {}
+.hero-descrpt {
+	font-size: 18px;
+	line-height: 1.66;
+	letter-spacing: 0.02em;
+
+	color: var(--secondary-text-color);
+}
 /* ...............................END MAIN.............................. */
