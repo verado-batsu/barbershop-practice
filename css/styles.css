@@ -249,4 +249,38 @@ body {
 	/* text-align: right; */
 }
 
+.content-reviews {}
+
+.reviews-list {}
+
+.reviews-item {
+	/* text-align: center; */
+}
+
+.reviews-item-number {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.35;
+	letter-spacing: 0.05em;
+}
+.reviews-item-number sup {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.375;
+	color: var(--accent-color);
+}
+
+.reviews-item-descrt {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	color: var(--tertiary-text-color);
+}
+
+.reviews-descrpt {
+	font-size: 18px;
+	line-height: 1.66;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}
 /* ...............................END MAIN.............................. */
