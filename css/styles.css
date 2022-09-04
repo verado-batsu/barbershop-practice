@@ -51,13 +51,13 @@ body {
 	color: var(--btn-light-theme-color);
 }
 
-.dark-bg {
+.dark-btn {
 	background-color: var(--btn-dark-theme-color);
 	border: 1px solid var(--accent-color);
 	border-radius: 25px;
 	color: var(--btn-light-theme-color);
 }
-.light-bg {
+.light-btn {
 	background-color: var(--btn-light-theme-color);
 	border: 1px solid var(--accent-color);
 	border-radius: 25px;
