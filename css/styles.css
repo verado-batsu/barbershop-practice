@@ -258,6 +258,7 @@ body {
 .reviews-list {}
 
 .reviews-item {
+	background-color: var(--secondary-bg-color);
 	/* text-align: center; */
 }
 
