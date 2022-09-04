@@ -8,17 +8,13 @@ font-family: 'Raleway', sans-serif; */
 	--primary-text-color: #555555;
 	--secondary-text-color: #9DA4BD;
 	--tertiary-text-color: #303030;
+	--quaternary-text-color: #FFFFFF;
 	--accent-color: #FF6C00;
-	--light-theme-text-color: #FFFFFF;
-	--dark-reference-text-color: rgba(157, 164, 189, 0.6);
+	--light-reference-text-color: rgba(157, 164, 189, 0.6);
 	
 	--primary-bg-color: #FFFFFF;
 	--secondary-bg-color: #F7F7F7;
 	--tertiary-bg-color: #191C26;
-
-
-	--btn-dark-theme-color: #303030;
-	--btn-light-theme-color: #FFFFFF;
 }
 
 .visually-hidden {
@@ -57,21 +53,60 @@ body {
 .btn:hover,
 .btn:focus {
 	background-color: var(--accent-color);
-	color: var(--btn-light-theme-color);
+	color: var(--quaternary-text-color);
 }
 .dark-btn {
-	background-color: var(--btn-dark-theme-color);
+	background-color: var(--tertiary-text-color);
 	border: 1px solid var(--accent-color);
 	border-radius: 25px;
-	color: var(--btn-light-theme-color);
+	color: var(--quaternary-text-color);
 }
 .light-btn {
-	background-color: var(--btn-light-theme-color);
+	background-color: var(--quaternary-text-color);
 	border: 1px solid var(--accent-color);
 	border-radius: 25px;
-	color: var(--btn-dark-theme-color);
+	color: var(--tertiary-text-color);
 }
 /* ...............................END BUTTON.............................. */
+
+
+/* REFERENCES */
+.dark-reference {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
+	color: var(--tertiary-text-color);
+}
+.light-reference {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
+	color: var(--light-reference-text-color);
+}
+/* END REFERENCES */
+
+
+/* TITLES */
+.dark-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.16;
+	letter-spacing: 0.05em;
+	color: var(--tertiary-text-color);
+}
+.light-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.16;
+	letter-spacing: 0.05em;
+	color: var(--quaternary-text-color);
+}
+/* END TITLES */
+
 
 /* .................................HEADER................................ */
 .header {
@@ -93,7 +128,7 @@ body {
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.1em;
-	color: var(--light-theme-text-color);
+	color: var(--quaternary-text-color);
 }
 
 .header-tel {
@@ -101,7 +136,7 @@ body {
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.1em;
-	color: var(--light-theme-text-color);
+	color: var(--quaternary-text-color);
 }
 /* .................................END HEADER................................ */
 
@@ -152,21 +187,13 @@ body {
 	color: var(--tertiary-text-color);
 }
 
-.hero-reference {
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	text-transform: uppercase;
-	color: var(--dark-reference-text-color);
-}
-
 .hero-title {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 72px;
 	line-height: 1.18;
 	letter-spacing: 0.05em;
-	color: var(--light-theme-text-color);
+	color: var(--quaternary-text-color);
 }
 
 .hero-descrpt {
@@ -184,23 +211,6 @@ body {
 
 .about-img {}
 
-.about-reference {
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	text-transform: uppercase;
-	color: var(--tertiary-text-color);
-}
-
-.about-title {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	font-size: 42px;
-	line-height: 1.16;
-	letter-spacing: 0.05em;
-	color: var(--tertiary-text-color);
-}
-
 .about-explain {
 	font-size: 18px;
 	line-height: 1.66;
@@ -214,5 +224,29 @@ body {
 	color: var(--primary-text-color);
 }
 
+.content-services {
+	background-color: #5c5a5a;
+}
+
+.services-list {}
+
+.services-list-item {}
+
+.list-table {}
+
+.table-item {
+	font-size: 18px;
+	line-height: 1.66;
+	letter-spacing: 0.02em;
+	color: var(--secondary-text-color);
+}
+
+.table-title {
+	
+}
+
+.table-descrp {
+	/* text-align: right; */
+}
 
 /* ...............................END MAIN.............................. */
