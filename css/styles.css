@@ -283,4 +283,26 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 }
+
+.content-barbers {}
+
+.barbers-list {}
+
+.barbers-item {
+	/* text-align: center; */
+	letter-spacing: 0.02em;
+}
+
+.barbers-img {}
+
+.barbers-name {
+	font-size: 18px;
+	line-height: 1.38;
+	color: var(--tertiary-text-color);
+}
+
+.barbers-position {
+	line-height: 1.35;
+	color: var(--accent-color);
+}
 /* ...............................END MAIN.............................. */
