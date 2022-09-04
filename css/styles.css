@@ -45,12 +45,20 @@ body {
 	color: var(--accent-color);
 }
 
+
+/* .................................BUTTON.............................. */
+.btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+}
 .btn:hover,
 .btn:focus {
 	background-color: var(--accent-color);
 	color: var(--btn-light-theme-color);
 }
-
 .dark-btn {
 	background-color: var(--btn-dark-theme-color);
 	border: 1px solid var(--accent-color);
@@ -63,6 +71,7 @@ body {
 	border-radius: 25px;
 	color: var(--btn-dark-theme-color);
 }
+/* ...............................END BUTTON.............................. */
 
 /* .................................HEADER................................ */
 .header {
@@ -93,13 +102,6 @@ body {
 	line-height: 1.33;
 	letter-spacing: 0.1em;
 	color: var(--light-theme-text-color);
-}
-
-.btn {
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 1.33;
-	letter-spacing: 0.09em;
 }
 /* .................................END HEADER................................ */
 
@@ -171,7 +173,46 @@ body {
 	font-size: 18px;
 	line-height: 1.66;
 	letter-spacing: 0.02em;
-
 	color: var(--secondary-text-color);
 }
+
+.content-about {}
+
+.about-list {}
+
+.about-item {}
+
+.about-img {}
+
+.about-reference {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
+	color: var(--tertiary-text-color);
+}
+
+.about-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.16;
+	letter-spacing: 0.05em;
+	color: var(--tertiary-text-color);
+}
+
+.about-explain {
+	font-size: 18px;
+	line-height: 1.66;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}
+
+.about-descrpt {
+	line-height: 1.85;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}
+
+
 /* ...............................END MAIN.............................. */
