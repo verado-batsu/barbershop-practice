@@ -36,6 +36,14 @@ body {
 	color: var(--primary-text-color);
 }
 
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .link:hover,
 .link:focus {
 	color: var(--accent-color);
@@ -44,6 +52,8 @@ body {
 
 /* .................................BUTTON.............................. */
 .btn {
+	padding: 12px 20px;
+
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 1.33;
@@ -113,17 +123,39 @@ body {
 	background-color: #969292;
 }
 
-.header-nav {}
+.header-flex {
+	display: flex;
+	align-items: center;
+} 
 
-.header-logo {}
+.header-nav {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo {
+	margin-right: 131px;
+}
 
 .logo-img {}
 
-.nav-list {}
+.nav-list {
+	display: flex;
+}
 
 .nav-item {}
+.nav-item:not(:last-child) {
+	margin-right: 30px;
+}
+.nav-item:last-child {
+	margin-right: 254px;
+}
 
 .nav-link {
+	display: block;
+	padding-top: 52px;
+	padding-bottom: 52px;
+
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 1.33;
@@ -131,7 +163,13 @@ body {
 	color: var(--quaternary-text-color);
 }
 
+
+
 .header-tel {
+	padding-top: 52px;
+	padding-bottom: 52px;
+	margin-right: 40px;
+
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 1.33;
