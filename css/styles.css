@@ -185,6 +185,12 @@ body {
 	background-color: var(--secondary-bg-color);
 }
 
+.footer-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .footer-copy {
 	font-weight: 600;
 	font-size: 11px;
@@ -193,11 +199,17 @@ body {
 	color: var(--secondary-text-color);
 }
 
-.footer-list {}
+.footer-list {
+	display: flex;
+}
 
 .footer-item {}
+.footer-item:not(:last-child) {
+	margin-right: 40px;
+}
 
 .footer-link {
+	display: block;
 	padding-top: 56px;
 	padding-bottom: 56px;
 
@@ -375,7 +387,7 @@ body {
 	justify-content: flex-end;
 	flex-wrap: wrap;
 	/* margin: -15px; */
-	gap: 30px;
+	/* gap: 30px; */
 	margin-right: 130px;
 }
 
@@ -386,6 +398,12 @@ body {
 
 	background-color: var(--secondary-bg-color);
 	text-align: center;
+}
+.reviews-item:not(:nth-child(2n)){
+	margin-right: 30px;
+}
+.reviews-item:not(:nth-last-child(-n + 2)) {
+	margin-bottom: 30px;
 }
 
 .reviews-item-number {
@@ -434,11 +452,19 @@ body {
 	margin-bottom: 44px;
 }
 
-.barbers-list {}
+.barbers-list {
+	display: flex;
+	flex-wrap: wrap;
+}
 
 .barbers-item {
-	/* text-align: center; */
+	flex-basis: calc((100% - 60px) / 3);
+
+	text-align: center;
 	letter-spacing: 0.02em;
+}
+.barbers-item:not(:nth-child(3n)) {
+	margin-right: 30px;
 }
 
 .barbers-img {
@@ -468,9 +494,17 @@ body {
 	margin-bottom: 44px;
 }
 
-.portfolio-list {}
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+}
 
-.portfolio-item {}
+.portfolio-item {
+	flex-basis: calc((100% - 90px) / 4);
+}
+.portfolio-item:not(:last-child) {
+	margin-right: 30px;
+}
 
 .portfolio-img {}
 
