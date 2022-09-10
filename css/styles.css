@@ -1,8 +1,7 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap');
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
-@import url(./nullstyle.css);
+/* @import url(./nullstyle.css); */
 
 :root {
 	--primary-text-color: #555555;
@@ -82,6 +81,8 @@ body {
 
 /* REFERENCES */
 .dark-reference {
+	margin-bottom: 20px;
+
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -89,6 +90,8 @@ body {
 	color: var(--tertiary-text-color);
 }
 .light-reference {
+	margin-bottom: 20px;
+
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -141,12 +144,10 @@ body {
 
 .nav-list {
 	display: flex;
+	gap: 30px;
 }
 
 .nav-item {}
-.nav-item:not(:last-child) {
-	margin-right: 30px;
-}
 .nav-item:last-child {
 	margin-right: 254px;
 }
@@ -162,8 +163,6 @@ body {
 	letter-spacing: 0.1em;
 	color: var(--quaternary-text-color);
 }
-
-
 
 .header-tel {
 	padding-top: 52px;
@@ -226,7 +225,15 @@ body {
 	color: var(--tertiary-text-color);
 }
 
+.hero-wrapper {
+	padding-top: 272px;
+	padding-bottom: 208px;
+	padding-left: 100px;
+}
+
 .hero-title {
+	margin-bottom: 20px;
+
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 72px;
@@ -236,6 +243,9 @@ body {
 }
 
 .hero-descrpt {
+	max-width: 358px; 
+	/* 357px on layout */
+
 	font-size: 18px;
 	line-height: 1.66;
 	letter-spacing: 0.02em;
@@ -243,7 +253,10 @@ body {
 }
 
 /* ABOUT */
-.content-about {}
+.content-about {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
 
 .about-list {}
 
@@ -251,7 +264,13 @@ body {
 
 .about-img {}
 
+.about-title {
+	margin-bottom: 20px;
+}
+
 .about-explain {
+	margin-bottom: 20px;
+
 	font-size: 18px;
 	line-height: 1.66;
 	letter-spacing: 0.02em;
@@ -259,6 +278,8 @@ body {
 }
 
 .about-descrpt {
+	margin-bottom: 42px;
+
 	line-height: 1.85;
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
@@ -353,6 +374,10 @@ body {
 /* PORTFOLIO */
 .content-portfolio {}
 
+.portfolio-reference {
+	margin-bottom: 44px;
+}
+
 .portfolio-list {}
 
 .portfolio-item {}
@@ -397,6 +422,8 @@ body {
 }
 
 .contacts-reference {
+	margin-bottom: 20px;
+
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
