@@ -14,6 +14,8 @@ font-family: 'Raleway', sans-serif; */
 	--primary-bg-color: #FFFFFF;
 	--secondary-bg-color: #F7F7F7;
 	--tertiary-bg-color: #191C26;
+
+	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -75,6 +77,75 @@ body {
 	/* background-color: var(--quaternary-text-color); */
 	color: var(--tertiary-text-color);
 }
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.2);
+	opacity: 1;
+	visibility: visible;
+
+	transition: opacity 250ms var(--timing-function),
+	visibility 250ms var(--timing-function);
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	min-width: 550px;
+	min-height: 600px;
+
+	background-color: var(--primary-bg-color);
+
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 250ms var(--timing-function);
+}
+.backdrop.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+.close-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	display: flex;
+	align-items: center;
+	padding: 6px;
+	width: 30px;
+	height: 30px;
+
+	color: var(--tertiary-text-color);
+	background-color: var(--primary-bg-color);
+	border: 1px solid var(--accent-color);
+	border-radius: 50%;
+
+	transition: color 250ms var(--timing-function),
+	background-color 250ms var(--timing-function);
+}
+.close-btn:hover,
+.close-btn:focus {
+	color: var(--quaternary-text-color);
+	background-color: var(--accent-color);
+}
+
+.modal-close {
+	fill: currentColor;
+}
 /* ...............................END BUTTON.............................. */
 
 
@@ -135,7 +206,11 @@ body {
 
 /* .................................HEADER................................ */
 .header {
-	background-color: #969292;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
 }
 
 .header-flex {
@@ -246,7 +321,9 @@ body {
 	display: flex;
 }
 
-.hero-list {}
+.hero-list {
+	margin-right: 58px;
+}
 
 .hero-item {}
 
